@@ -1,0 +1,344 @@
+
+
+.header-nav{
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--transpirentGreen);
+    padding: 0em;
+}
+
+.header-nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav .logo img{
+    vertical-align: middle;
+    margin-left: 1.5em;
+}
+
+.header-nav .menu .head{
+    display: none;
+}
+.header-nav .menu ul{
+    list-style: none;
+}
+.header-nav .menu > ul > li{
+    display: inline-block;
+}
+.header-nav .menu > ul > li:not(:last-child){
+    margin-right: 40px;
+}
+.header-nav .menu .dropdown{
+    position: relative;
+}
+
+.header-nav .menu a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--mainGreen);
+    display: block;
+}
+.header-nav .menu > ul > li > a{
+    padding: 10px 0;
+}
+
+.header-nav .menu > ul > .dropdown > a{
+    padding-right: 15px;
+}
+.header-nav .menu i{
+    font-size: 10px;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    color: var(--mainGreen);
+    top: calc(50% - 5px);
+}
+.header-nav .menu > ul > li > i{
+    right: 0;
+}
+.header-nav .menu .tab{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    padding: 15px 0;
+    background-color: var(--transpirentGreen);
+    box-shadow: 0 0 5px rgb(13, 80, 9, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+}
+.header-nav .menu .tab-right{
+    left: 100%;
+    top: 0;
+}
+@media (hover: hover){
+    .header-nav .menu li:hover > .tab{
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
+}
+.header-nav .menu .tab a{
+    padding: 6px 24px;
+    color: #fff;
+}
+.nav-btn{
+    padding: 1em 1.5em;
+    background-color: var(--mainGreen);
+    border-radius: 5px;
+    border-style: none;
+    font-weight: bold;
+}
+.header-nav .menu button > a{
+    color: #fff;
+}
+.header-nav .menu .tab .dropdown > a{
+    padding-right: 34px;
+}
+.header-nav .menu .tab span{
+    background-image: linear-gradient(#fff, var(--mainGreen));
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease;
+}
+@media (hover: hover){
+    .header-nav .menu .tab li:hover > a > span{
+        background-size: 100% 1px;
+    }
+}
+.header-nav .menu .tab i{
+    transform: rotate(-90deg);
+    right: 24px;
+    color: #fff;
+}
+
+.header-right > *{
+    margin-right: 25px;
+}
+.header-right .icon-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+}
+.header-right .open-menu-btn{
+    display: none;
+}
+/***ACTIVE ADDED FROM JAVASCRIPT***/
+@media (hover: none) and (pointer: coarse){
+    .header-nav .menu .dropdown.active > i{
+        background-color: transparent;
+        transform: rotate(180deg);
+    }
+    
+    .header-nav .menu .dropdown.active > .tab{
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
+    .active a{
+        border-bottom:2px solid var(--mainGreen);
+        
+    }
+    
+    .active a:nth-child(){
+        border-bottom:none
+        
+    }
+}
+
+@media (max-width: 1041px) {
+    .header-nav{
+        padding: 12px 0;
+    }
+    .header-nav .menu{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background-color: rgb(13, 80, 9, 0.85);
+        padding: 15px 30px 30px;
+        overflow-y: auto;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+    .header-nav .head .logo img {
+        display: none;
+    }
+    .header-nav .menu.open{
+        transform: none;
+    }
+    .header-nav .menu .head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .header-nav .menu .close-menu-btn{
+        height: 35px;
+        width: 35px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+    }
+    .header-nav .menu .close-menu-btn::before,
+    .header-nav .menu .close-menu-btn::after{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+    }
+    .header-nav .menu .close-menu-btn::before{
+        transform: rotate(45deg);
+    }
+    .header-nav .menu .close-menu-btn::after{
+        transform: rotate(-45deg);
+    }
+    .header-nav .menu ul {
+        list-style: none;
+        padding-left: 10px;
+    }
+    .header-nav .menu > ul > li{
+        display: block;
+    }
+    .header-nav .menu > ul > li:not(:last-child){
+        margin-right: 0;
+    }
+    .header-nav .menu li{
+        border-bottom: 1px solid #fff;
+    }
+    .header-nav .menu li:first-child{
+        border-top: 1px solid #fff;
+    }
+    .header-nav .menu > ul > li > a{
+        color: #fff;
+        padding: 12px 0;
+    }
+    /* .header-nav .menu > ul > .dropdown > a{
+        padding-left: 34px;
+    } */
+/********NAV FONT SIZE********/
+    .header-nav .menu a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 75%;
+        color: rgb(13, 80, 9, 1);
+        display: block;
+    }
+    .header-nav .menu i{
+        font-size: 75%;
+    }
+/********NAV FONT SIZE END******/
+    .header-nav .menu i{
+        height: 34px;
+        width: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+        pointer-events: auto;
+        top: 1px;
+    }
+/***.ACTIVE ADDED FROM JAVASCRIPT***/
+    .header-nav .menu .dropdown.active > i{
+        background-color: transparent;
+        transform: rotate(180deg);
+    }
+    .header-nav .menu .dropdown.active > .tab{
+        display: block;
+    }
+/***.ACTIVE ADDED FROM JAVASCRIPT END***/
+    .header-nav .menu .tab{
+        position: static;
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        padding: 0;
+        transition: none;
+        box-shadow: none;
+        width: 100%;
+        display: none;
+    }
+    .header-nav .menu .tab li:last-child{
+        border: none;
+    }
+    .header-nav .menu .tab a{
+        padding: 12px 0 12px 15px;
+    }
+    .header-nav .menu .tab .tab a{
+        padding-left: 30px;
+    }
+    .header-nav .menu .tab .tab .tab a{
+        padding-left: 45px;
+    }
+    .header-nav .menu .tab span{
+        background-image: none;
+    }
+    .header-nav .menu .tab i{
+        transform: none;
+        right: 0;
+    }
+    .header-nav .menu > ul > li > i{
+        color: #fff;
+    }
+    /*OPEN-MENU-BUTTON*/
+    .header-right .open-menu-btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 44px;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+    .header-right .open-menu-btn .line{
+        height: 2px;
+        width: 30px;
+        background-color: rgb(13, 80, 9, 1);
+        position: absolute;
+    }
+    .header-right .open-menu-btn .line-1{
+        transform: translateY(-8px);
+    }
+    .header-right .open-menu-btn .line-3{
+        transform: translateY(8px);
+    }
+
+    .nav-btn {
+        margin-top: 3em;
+        padding: 1em 1.5em;
+        background-color: #fff;
+        border: none;
+    }
+    .header-nav .menu button > a{
+        color: rgb(13, 80, 9, 1);
+    }
+}
+
+@media(max-width: 480px){
+    .header-nav .menu {
+        width: 45%;
+    }
+
+
+}
+/*****NavBar CSS ENDS********/

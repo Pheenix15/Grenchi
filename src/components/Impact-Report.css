@@ -1,0 +1,46 @@
+.impact-report-hero {
+    background-image: url(../img/hero/impact-report.jpg);
+    color: var(--mainWhite);
+}
+
+.impact-report-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 25px;
+}
+
+.impact-report-pdf {
+    background-color: var(--mainGreen);
+    color: var(--mainWhite);
+    border-radius: 5px;
+}
+
+.impact-reports {
+    width: 35%;
+    text-align: center;
+}
+
+.impact-report-pdf.active {
+    border: 3px inset #ccc;
+}
+
+.pdf-box {
+    width: 50%;
+}
+
+@media screen and (max-width: 870px) {
+    .impact-report-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .impact-reports {
+        width: 70%;
+    }
+
+    .pdf-box {
+        width: 95%;
+    }
+}

@@ -1,0 +1,47 @@
+:root{
+  --mainGreen: rgb(13, 80, 9, 1);
+  --transpirentGreen: rgb(13, 80, 9, 0.8);
+  --mainWhite: #fff;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slide{
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+
+.heading{
+  font-family: 'ITC Eras', sans-serif;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.text-heading{
+  font-family: 'ITC Eras Demi', sans-serif;
+  font-weight: 500;
+}
+.text-green{
+  color: var(--mainGreen) !important;
+}
+.text-white{
+  color: var(--mainWhite);
+}
+
+.txt-content{
+  text-align: justify;
+
+}
+
+.bold{
+  font-weight: bold;
+}
+.theme{
+  font-style: italic;
+}

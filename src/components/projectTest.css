@@ -1,0 +1,22 @@
+.projectContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project-array-img{
+    max-height: 300px;
+}
+.project-array-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+.project-array-info{
+    color: #000;
+}
+.project-array-info h5{
+    margin: 0;
+    font-size: medium;
+}

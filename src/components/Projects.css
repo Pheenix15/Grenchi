@@ -1,0 +1,199 @@
+
+.main-project-hero{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(13, 80, 9, 0.3);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+/* PROJECT HEROS */
+
+.climate-bootcamp{
+    background-image: url(../img/Climate-Bootcamp-2024/CB-hero.jpg);
+}
+
+.community-engagement{
+    background-image: url(../img/EAEP/EAEP-1.jpg);
+}
+
+.environmental-education{
+    background-image:url(../img/WorldEarthDay2024/WED24-5.jpg);
+}
+
+.blog-hero{
+    background-image:url(../img/hero/hero.jpg);
+}
+
+.events-hero{
+    background-image:url(../img/hero/event-hero.jpg);
+}
+
+/* PROJECT HEROS ENDS */
+
+/* PROJECT INTRO */
+.intro {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 50px;
+    margin: 5% auto;
+    text-align: justify;
+    line-height: 2;
+}
+
+.intro-txt h3 {
+    font-size: 2em;
+}
+
+.intro-img {
+    width: 400%;
+    height: auto;
+}
+
+.intro-img img {
+    width: 100%;
+    height: auto;
+}
+
+.gecci-main-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-container{
+    width: 85%;
+    margin: 0 auto 5% auto;
+}
+
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.project-box-reverse {
+    margin-top: 5%;
+}
+
+
+.project-img {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+}
+
+.project-img::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mainGreen);
+    left: -3%;
+    top: -3%;
+    z-index: -1;
+}
+
+.project-img::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--mainGreen);
+    right: -3%;
+    bottom: -3%;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.project-img:hover::after {
+    transform: rotateZ(30deg);
+}
+
+.project-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+.project-info{
+    width: 90%;
+    max-width: 650px;
+    color: #000;
+}
+.project-info-heading {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.project-link {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    color: var(--mainGreen);
+    transition: all 0.5s ease;
+    
+}
+
+/* NATURE LAB PROJECT ONLY */
+
+.projectContainer {
+    display: flex;
+    gap: 30px;
+}
+
+@media (hover: hover ) and (pointer: fine) {
+    .project-link:hover {
+        transform: translateX(5px);
+    }
+}
+
+.fa-arrow-right {
+    padding-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .project-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projectContainer{
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-img {
+        width: 100%;
+    }
+}
+/* Small devices */
+@media (max-width: 767px) {
+    .project-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectContainer{
+        display: grid;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-img {
+        width: 100%;
+    }
+}

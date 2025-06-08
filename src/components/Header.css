@@ -1,0 +1,59 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--mainGreen);
+    padding: 0.5em 3em;
+}
+
+
+.slogan2{
+    display: none;
+}
+p{
+    margin-top: 0px;
+}
+.header p{
+    color: var(--mainWhite);
+    margin: 0;
+    font-size: small;
+}
+.header-icons{
+    white-space: nowrap;
+}
+.header i{
+    padding: 0 15% 0 0;
+    cursor: pointer;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 649px) {
+    .slogan{
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 70%;
+    }
+    .slogan2{
+        display: flex;
+    }
+    .RightToLeft{
+        margin-left: 10px;
+        padding-left: 10px;
+        animation: 15s slide linear infinite;
+    }
+
+    .btn{
+        font-size: 12px;
+    }
+}
