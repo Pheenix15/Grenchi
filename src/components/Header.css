@@ -1,10 +1,12 @@
 
 .header{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: var(--mainGreen);
+    width: 100%;
     padding: 0.5em 3em;
 }
 
@@ -21,7 +23,8 @@ p{
     font-size: small;
 }
 .header-icons{
-    white-space: nowrap;
+    display: flex;
+    gap: 15px;
 }
 .header i{
     padding: 0 15% 0 0;
@@ -42,7 +45,7 @@ p{
         flex-direction: row;
         white-space: nowrap;
         overflow: hidden;
-        width: 70%;
+        width: 60%;
     }
     .slogan2{
         display: flex;
@@ -55,5 +58,12 @@ p{
 
     .btn{
         font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5em 2em 0.5em 1em;
     }
 }

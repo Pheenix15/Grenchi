@@ -3,8 +3,8 @@ export const projectArray = [
     {
         id:0,
         title: 'Ecosystem Restoration',
-        image: '../img/Projects/idf.jpg',
-        url: '/Projects/Eco-Restoration-for-Climate-Action'
+        image: '../img/Projects/EnvironmentDay.jpg',
+        url: '/Environmental-Education'
     },
 
     {
@@ -53,9 +53,9 @@ export const projectArray = [
 export const sideBarProjectArray = [
     {
         id:0,
-        title: 'Anambra Climate Bootcamp 2023',
+        title: 'Anambra Climate Bootcamp 2025',
         image: '../img/InternationalDayOfForests/IDF 2.jpg',
-        url: '../Projects/ClimateBootcamp-2023',
+        url: '../Projects/ClimateBootcamp-2025',
     },
 
     {
@@ -67,10 +67,11 @@ export const sideBarProjectArray = [
 
     {
         id:2,
-        title: 'Eco-Restoration for Climate Action',
-        image: './Eco-Restoration-for-Climate-Action',
-        url: '../Projects/Eco-Restoration-for-Climate-Action',
+        title: 'Anambra Climate Bootcamp 2023',
+        image: '../img/InternationalDayOfForests/IDF 2.jpg',
+        url: '../Projects/ClimateBootcamp-2023',
     },
+
 
     {
         id:3,
@@ -102,42 +103,42 @@ export const sideBarProjectArray = [
 
 
     {
-        id:8,
+        id:7,
         title: 'Youth Climate Policy Training 2024',
         image: '../img/YCPT/ycpt.jpg',
         url: '../Projects/YouthClimatePolicy',
     },
 
     {
-        id:9,
+        id:8,
         title: 'Tree Nursery Project',
         image: '../img/NLP/NLP-2.jpg',
         url: '../Projects/Tree-Nursery-project',
     },
 
     {
-        id:10,
+        id:9,
         title: 'Tree Planting Project',
         image: '../img/GreenHangout/project-2.jpg',
         url: '../Projects/Tree-planting-project',
     },
 
     {
-        id:11,
+        id:10,
         title: 'World Earth Day 2024',
         image: '../img/NLP/NLP-2.jpg',
         url: '../Projects/WorldEarthDay-2024',
     },
 
     {
-        id:12,
+        id:11,
         title: 'World Environment Day 2024',
         image: '../img/GreenHangout/project-2.jpg',
         url: '../Projects/WorldEnvironmentDay-2024',
     },
 
     {
-        id:13,
+        id:12,
         title: 'World Forest Day 2022',
         image: '../img/GreenHangout/project-2.jpg',
         url: '../Projects/WorldForestDay-2022',

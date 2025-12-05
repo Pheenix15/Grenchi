@@ -33,23 +33,35 @@ const ClimateBootcamp = () => {
                 <div className="gecci-main-projects">
                     <h4 className='heading text-green'>Our Climate Bootcamp Activities</h4>    
                     <div className='project-container' >
+                        {/* BOOTCAMP 2025 */}
                         <div className="project-box">
-                            <div className="project-img"><img src='img/Projects/acb-19.jpg' alt='Anambra Climate Bootcamp 2023' /></div>
+                            <div className="project-img"><img src='img/Climate-Bootcamp-2025/CB-2025-1.jpg' alt='Anambra Climate Bootcamp 2023' /></div>
                             <div className="project-info">
-                                <h5 className='project-info-heading' >Anambra Climate Bootcamp 2023</h5>
-                                <p>At Green Environment and Climate change Initiative (GRENCHI), we believe that taking action to address climate change is crucial for a sustainable future. Our Climate BootCamp is an immersive program designed to empower young people with the knowledge and hands-on skills necessary to make a positive impact on the environment. The first ever Climate Bootcamp for young people in Anambra State was held on 26th July 2023. It was an empowering day filled with enlightening activities for the invited 100 students across 7 schools in Anambra State.</p>
-                                <Link to='../Projects/ClimateBootcamp-2023'><div className="project-link">Read More<i className="fa-solid fa-arrow-right"></i></div></Link>
+                                <h5 className='project-info-heading' >Climate Bootcamp 2025</h5>
+                                <p>With the stark realization that young people are the creative force behind today’s climate solutions, we organized the <span className='bold' >Climate Bootcamp 3.0</span> to empower, equip, and elevate secondary school students as catalysts for environmental change. This year’s edition focused on building practical green skills, encouraging innovation, and fostering a deep sense of environmental responsibility among youth.</p>
+                                <Link to='../Projects/ClimateBootcamp-2025'><div className="project-link">Read More<i className="fa-solid fa-arrow-right"></i></div></Link>
                             </div>
                         </div>
 
+                        {/* BOOTCAMP 2024 */}
                         <div className="project-box project-box-reverse">
                             <div className="project-info">
-                                <h5 className='project-info-heading' >Anambra Climate Bootcamp 2024</h5>
+                                <h5 className='project-info-heading' >Climate Bootcamp 2024</h5>
                                 <p>On July 24, 2024, the Climate Bootcamp 2.0, an environmental education event organized by the Green Environment and Climate Change Initiative (GRENCHI) with support from The Movement Trust and partnership with the Nigeria Conservation Foundation (NCF), brought together 73 students from seven secondary schools in Awka at the Ekwueme Centre for Multi-Disciplinary Research, Nnamdi Azikiwe University. This event aimed to inspire and equip young environmental leaders with practical knowledge and skills to drive environmental actions.</p>
                                 <Link to='../Projects/ClimateBootcamp-2024'><div className="project-link">Read More<i className="fa-solid fa-arrow-right"></i></div></Link>
                             </div>
                             <div className="project-img"><img src='img/Projects/CB-2024-5.jpg' alt='Anambra Climate Bootcamp 2023' /></div>
                         </div>
+                        {/* BOOTCAMP 2023 */}
+                        <div className="project-box">
+                            <div className="project-img"><img src='img/Projects/acb-19.jpg' alt='Anambra Climate Bootcamp 2023' /></div>
+                            <div className="project-info">
+                                <h5 className='project-info-heading' >Climate Bootcamp 2023</h5>
+                                <p>At Green Environment and Climate change Initiative (GRENCHI), we believe that taking action to address climate change is crucial for a sustainable future. Our Climate BootCamp is an immersive program designed to empower young people with the knowledge and hands-on skills necessary to make a positive impact on the environment. The first ever Climate Bootcamp for young people in Anambra State was held on 26th July 2023. It was an empowering day filled with enlightening activities for the invited 100 students across 7 schools in Anambra State.</p>
+                                <Link to='../Projects/ClimateBootcamp-2023'><div className="project-link">Read More<i className="fa-solid fa-arrow-right"></i></div></Link>
+                            </div>
+                        </div>
+
                     </div>
                        
                 </div>

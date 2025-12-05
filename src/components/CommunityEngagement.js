@@ -44,7 +44,7 @@ const CommunityEngagement = () => {
                         <div className="project-box project-box-reverse">
                             <div className="project-info">
                                 <h5 className='project-info-heading' >Agriculture Empowerment Programme</h5>
-                                <p>n our ongoing effort to bolster the resilience of the Ebenebe Community in Awka North Local Government Area, Anambra State, Nigeria, we recently conducted an Agriculture Empowerment Programme for twenty (20) farmers within the community.</p>
+                                <p>In our ongoing effort to bolster the resilience of the Ebenebe Community in Awka North Local Government Area, Anambra State, Nigeria, we recently conducted an Agriculture Empowerment Programme for twenty (20) farmers within the community.</p>
                                 <Link to='../Projects/Ebenebe-Agriculture-Empowerment-Programme'><div className="project-link">Read More<i className="fa-solid fa-arrow-right"></i></div></Link>
                             </div>
 

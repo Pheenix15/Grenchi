@@ -35,6 +35,10 @@
     background-image:url(../img/hero/event-hero.jpg);
 }
 
+.E-STEM-hero {
+    background-image:url(../img/hero/e-stem-hero.jpg);
+}
+
 /* PROJECT HEROS ENDS */
 
 /* PROJECT INTRO */
@@ -55,6 +59,10 @@
 .intro-img {
     width: 400%;
     height: auto;
+}
+
+.forest-landscape-intro-img {
+    width: auto !important; /*BECAUSE IMAGE IN FOREST LANDSCAPE RESTORATION GET TOO BIG DUE TO SMALLER TEXT*/
 }
 
 .intro-img img {
@@ -84,6 +92,18 @@
     margin-top: 5%;
 }
 
+.project-video iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+}
+
+/* GREEN BOX ON IMAGE */
 
 .project-img {
     position: relative;
@@ -117,6 +137,8 @@
     transform: rotateZ(30deg);
 }
 
+/* GREEN BOX ON IMAGE END */
+
 .project-img img{
     width: 100%;
     height: auto;
@@ -143,10 +165,46 @@
 }
 
 /* NATURE LAB PROJECT ONLY */
-
-.projectContainer {
+.Nature-lab-project-Container {
     display: flex;
     gap: 30px;
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+
+/* ALL GRENCHI PROJECT PAGE CSS */
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projectContainer a {
+    color: var(--mainGreen);
+    font-size: 1.2em;
+}
+
+/* ALL GRENCHI PROJECT PAGE CSS END*/
+
+/* E-STEM PROJECT VIDEO */
+.E-STEM-project-Container {
+    margin: 30px 0;
+    padding: 0 40px;
+}
+
+.E-STEM-video-container {
+    display: flex;
+    gap: 20px;
+}
+
+.E-STEM-video {
+    width: 500px;
+}
+
+.video-title {
+    font-size: 1.3em;
 }
 
 @media (hover: hover ) and (pointer: fine) {

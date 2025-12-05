@@ -55,6 +55,9 @@ const TreeNurseryProject = () => {
                                                     <img src="../img/NLP/NLP-1.jpg" className="sliding-img swiper-slide"  alt="Students holding seedling in polypots" />
                                                     <img src="../img/NLP/NLP-2.jpg" className="sliding-img swiper-slide"  alt="Students tending to seedling in polypots" />
                                                     <img src="../img/NLP/NLP-5.jpg" className="sliding-img swiper-slide" alt="Students tending to seedling in polypots" />
+                                                    <img src="../img/NLP/NLP-6.jpg" className="sliding-img swiper-slide" alt="Students tending to seedling in polypots" />
+                                                    <img src="../img/NLP/NLP-7.jpg" className="sliding-img swiper-slide" alt="Students tending to seedling in polypots" />
+                                                    <img src="../img/NLP/NLP-8.jpg" className="sliding-img swiper-slide" alt="Students tending to seedling in polypots" />
                                                 </div>
                                             </div>
                                             <div className="swiper-button-next swiper-btn"></div>

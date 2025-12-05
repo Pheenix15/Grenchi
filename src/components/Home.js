@@ -50,36 +50,94 @@ const Home = () => {
                 </section>
                 {/* HERO ICON OVERLAY */}
                 <div className="subSection">
+                    {/* ICON OVERLAY 1 */}
                     <div className="icons-overlay">
                         <div className="icons-overlay-content bioconservation">
-                            <img src="../img/Bdconserv.png" alt='Biodiverdsity Conservation' height="100px" width="100px" />
+                            <img src="../img/sub-icons/Bdconserv.png" alt='Biodiverdsity Conservation' height="100px" width="100px" />
                             <p>Biodiversity Conservation</p>
                         </div>
                 
                         <div className=" icons-overlay-content climateEducation">
-                            <img src="../img/CEdu.png" alt='Climate Education' height="100px" width="100px" />
+                            <img src="../img/sub-icons/CEdu.png" alt='Climate Education' height="100px" width="100px" />
                             <p>Climate Education</p>
                         </div>
                         <div className="icons-overlay-content EcoSystem">
-                            <img src="../img/EcoRes.png" alt="Ecosystem Restoration" height="100px" width="100px" />
+                            <img src="../img/sub-icons/EcoRes.png" alt="Ecosystem Restoration" height="100px" width="100px" />
                             <p>Ecosystem Restoration</p>
+                        </div>
+                        <div className="icons-overlay-content CommunityEmpowerment">
+                            <img src="../img/sub-icons/CommEmp.png" alt="Community Empowerment" height="100px" width="100px" />
+                            <p>Community Empowerment</p>
+                        </div>
+                    </div>
+                    {/* ICON OVERLAY 2 */}
+                    <div className="icons-overlay icons-overlay-extra">
+                        <div className="icons-overlay-content bioconservation">
+                            <img src="../img/sub-icons/Bdconserv.png" alt='Biodiverdsity Conservation' height="100px" width="100px" />
+                            <p>Biodiversity Conservation</p>
+                        </div>
+                
+                        <div className=" icons-overlay-content climateEducation">
+                            <img src="../img/sub-icons/CEdu.png" alt='Climate Education' height="100px" width="100px" />
+                            <p>Climate Education</p>
+                        </div>
+                        <div className="icons-overlay-content EcoSystem">
+                            <img src="../img/sub-icons/EcoRes.png" alt="Ecosystem Restoration" height="100px" width="100px" />
+                            <p>Ecosystem Restoration</p>
+                        </div>
+                        <div className="icons-overlay-content CommunityEmpowerment">
+                            <img src="../img/sub-icons/CommEmp.png" alt="Community Empowerment" height="100px" width="100px" />
+                            <p>Community Empowerment</p>
+                        </div>
+                    </div>
+                    {/* ICON OVERLAY 3 */}
+                    <div className="icons-overlay icons-overlay-extra">
+                        <div className="icons-overlay-content bioconservation">
+                            <img src="../img/sub-icons/Bdconserv.png" alt='Biodiverdsity Conservation' height="100px" width="100px" />
+                            <p>Biodiversity Conservation</p>
+                        </div>
+                
+                        <div className=" icons-overlay-content climateEducation">
+                            <img src="../img/sub-icons/CEdu.png" alt='Climate Education' height="100px" width="100px" />
+                            <p>Climate Education</p>
+                        </div>
+                        <div className="icons-overlay-content EcoSystem">
+                            <img src="../img/sub-icons/EcoRes.png" alt="Ecosystem Restoration" height="100px" width="100px" />
+                            <p>Ecosystem Restoration</p>
+                        </div>
+                        <div className="icons-overlay-content CommunityEmpowerment">
+                            <img src="../img/sub-icons/CommEmp.png" alt="Community Empowerment" height="100px" width="100px" />
+                            <p>Community Empowerment</p>
                         </div>
                     </div>
                 </div>
 
+                {/* UPCOMING EVENT SECTION */}
+                <section className="upcoming-event-section" style={{display: "none"}}>
+                    <div className="upcoming-event">
+                        <h4 className='upcoming-event-heading heading' >Upcoming Event!!!</h4>
+                        <h5 className='heading' >Climate Bootcamp 3.0</h5>
+                        <p>Theme: Promoting Young Innovators for a Progressive Future</p>
+                        <div className="donate-cta">
+                            <Link to="/Events/Climate-Bootcamp-3-0"><Button  className="btn donate-btn">Open Page</Button></Link>
+                        <a target="_blank" rel="noreferrer" href=" https://docs.google.com/forms/d/e/1FAIpQLSfwbkB2b13xZTXXtL5bGmPfLKZ3Dh2KRV34cfF0ILzwMTSqkA/viewform?usp=header"><Button  className="btn donate-btn">Apply for E-STEM mini Grant</Button></a>
+                        </div>
+                    </div>
+                </section>
+
+                {/* ABOUT SECTION */}
                 <section className="about-section" id="about">
                     <div className="about-content">
-                        <img src="../img/abt-img.jpg" alt="the director and students of st.John of God Secondary school transplanting a tree" />
+                        <img src="../img/abt-img.jpg" alt="A farmer holding tree seedlings donated by GRENCHI" />
                         <div className="about-txt">
                             <div className="txt-heading heading text-green">
                                 <h4>ABOUT US</h4>
                             </div>
                             <p className="txt-content">
-                                Green Environment and Climate Change Initiative (GRENCHI) is an environmental conservation organization incorporated under the law of the federal republic of Nigeria.
+                                The Green Environment and Climate Change Initiative (GRENCHI) is an environmental conservation organization legally incorporated under the laws of the Federal Republic of Nigeria and committed to combating climate change and deforestation.
                                 <br />
-                                GRENCHI's primary goal is to combact climate change and deforestation through initiating projects and programms on the environment in line with the UN Sustainable Development Goals.
                                 <br />
-                                One of our primary strategies in achieving the goal is the use of awareness campaigns to enlighten and inform the general public on environmental issues and the threat they pose to our society.
+                                Aligned with the UN Sustainable Development Goals and the UN Decade on Ecosystem Restoration, GRENCHI implements Forest Landscape Restoration and conservation projects to restore degraded ecosystems, protect biodiversity, and promote sustainable land use practices that benefit both nature and local communities.  GRENCHI also prioritizes education and awareness campaigns to inform the public about environmental issues and their broader societal impacts.
                             </p>
                             <div className="about-tabs">
                                 <div className="tabs">
@@ -118,12 +176,14 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* PROJECT SECTION */}
                 <section className="project-section">
                     <div className="projects">
                         <h4 className='heading text-green'>OUR PROJECTS</h4>
                         <div className="home-project-box">
                             <div className="project-1 project-content">
-                                <a href="./EcosystemRestoration">
+                                <a href="/Projects/Eco-Restoration-for-Climate-Action">
                                     <img src="../img/Projects/ERCA-3.jpg" alt="GREENCHI youths on a walk for Ecosystem Restoration" />
                                     <div className="project-txt">
                                     <p>Ecosystem Restoration</p>
@@ -133,7 +193,7 @@ const Home = () => {
                             </div>
                 
                             <div className="project-2 project-content">
-                                <a href="./GreenHangout">
+                                <a href="/Projects/GreenHangout">
                                     <img src="../img/GreenHangout/project-2.jpg" alt="Participants of the Green Hangout engaging in a sprited discussion" />
                                     <div className="project-txt">
                                         <p>Green Hangout 2022</p>
@@ -143,7 +203,7 @@ const Home = () => {
                             </div>
                 
                             <div className="project-3 project-content">
-                                <a href="./ClimateBootcamp">
+                                <a href="/Climate-Bootcamp">
                                     <img src="../img/ClimateBootcamp/project-3.jpg" alt="Students of learning environmental painting during the Climate Bootcamp 2023" />
                                 <div className="project-txt">
                                     <p>Climate Bootcamp 2023</p>
@@ -156,6 +216,7 @@ const Home = () => {
                     </div>
                 </section>
 
+                {/* VOLUNTEER SECTION */}
                 <section className="volunteer-section">
                     <div className="volunteer">
                         <p className='text-heading text-white'>Together, We Can Make a Difference</p>
@@ -278,18 +339,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="upcoming-event-section" style={{display: "flex"}}>
-                    <div className="upcoming-event">
-                        <h4 className='upcoming-event-heading heading' >Upcoming Event!!!</h4>
-                        <h5 className='heading' >Climate Bootcamp 3.0</h5>
-                        <p>Theme: Promoting Young Innovators for a Progressive Future</p>
-                        <div className="donate-cta">
-                            <Link to="/Events/Climate-Bootcamp-3-0"><Button  className="btn donate-btn">Open Page</Button></Link>
-                        <a target="_blank" rel="noreferrer" href=" https://docs.google.com/forms/d/e/1FAIpQLSfwbkB2b13xZTXXtL5bGmPfLKZ3Dh2KRV34cfF0ILzwMTSqkA/viewform?usp=header"><Button  className="btn donate-btn">Apply for E-STEM mini Grant</Button></a>
-                        </div>
-                    </div>
-                </section>
-
+                {/* NEWS AND UPDATES SECTION */}
                 <section className="News-and-updates-section">
                     <div className="News-and-updates-container">
                         <h5 className='heading text-green'>NEWS AND UPDATES</h5>

@@ -79,6 +79,26 @@
     padding: 1.2em;
     text-align: center;
   }
+
+  .team-image-container {
+    width: 95%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .team-image-container h3 {
+    color: var(--mainGreen);
+  }
+
+  .team-image {
+    width: 100%;
+  }
+
+  .team-image img {
+    width: 100%;
+    height: auto;
+  }
+
   /* .ad-content p{
 
   } */

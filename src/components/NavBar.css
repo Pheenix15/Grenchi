@@ -115,7 +115,7 @@
     }
 }
 .header-nav .menu .tab i{
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); INCASE IT IS NEEDED*/
     right: 24px;
     color: #fff;
 }

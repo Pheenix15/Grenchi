@@ -9,12 +9,11 @@ const Button = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 1.4s ease;
+    transition: all 0.3s ease-in-out;
     &:hover {
         color: var(--mainGreen);
         background: var(--mainWhite);
         border: 1px solid var(--mainGreen);
-        transform: scale(1.1);
     }
 `
 

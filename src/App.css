@@ -1,9 +1,10 @@
 :root{
-  --mainGreen: rgb(13, 80, 9, 1);
-  --transpirentGreen: rgb(13, 80, 9, 0.8);
+  --mainGreen: rgb(9, 75, 14, 1);
+  --transpirentGreen: rgb(9, 75, 14, 0.8);
   --mainWhite: #fff;
 }
 
+/* --mainGreen: rgb(13, 80, 9, 1); */
 
 a {
   text-decoration: none;

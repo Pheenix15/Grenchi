@@ -180,6 +180,13 @@
     background-blend-mode: overlay;
 }
 
+/*****ANAMBRA CLIMATE BOOTCAMP 3.0********/
+.acb-2025-hero{
+    background-image: url(../img/Climate-Bootcamp-2025/CB-2025-hero.jpg);
+    background-color: rgb(13, 80, 9, 0.3);
+    background-blend-mode: overlay;
+}
+
 /*****Ebenebe Climate Resiliance********/
 .Ecr-hero{
     background-image: url(../img/Ebenebe/eb-4.jpg);
@@ -208,7 +215,7 @@
 }
 /*****Ecosystem Restoration for Climate Action********/
 .ERCA-hero{
-    background-image: url(../img/ERCA/ERCA-3.jpg);
+    background-image: url(../img/ERCA/ERCA-5.jpg);
 }
 .erca-p{
     padding-bottom: 0;
@@ -216,6 +223,11 @@
 }
 .erca-seedling-img{
     position: relative;
+}
+
+/*****FOREST LANDSCAPE RESTORATION********/
+.forest-landscape-restoration{
+    background-image: url(../img/hero/Fsl-1.jpg);
 }
 
 /*****Nature Lab Project********/
@@ -271,6 +283,30 @@ a .gecci-link{
 
 
 /***********EVENTS APPLICATION PAGE END****************/
+
+/* CAREER PAGE */
+.Career {
+    background-image: url(../img/career-hero.jpg);
+    background-color: rgb(13, 80, 9, 0.5);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+}
+
+.career-article {
+    justify-content: center;
+}
+
+.article-article-title h3 {
+    font-size: 1.5em;
+    color: var(--mainGreen);
+    text-align: center;
+}
+
+.career-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 1041px) {
     .side-bar{

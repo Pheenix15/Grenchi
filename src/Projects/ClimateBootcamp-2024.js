@@ -66,7 +66,7 @@ const ClimateBootcamp2024 = () => {
                                         </p>
 
                                         <div className="article-img">
-                                            <img src="./img/Climate-Bootcamp-2024/CB-2024-6.jpg" alt="The three Facilatators of the most Dedicated school with their GRENCHI contact persons, Mrs.Ngozi Ogamba and Mr.Divinefavour Enwereuzo" />
+                                            <img src="../img/Climate-Bootcamp-2024/CB-2024-6.jpg" alt="The three Facilatators of the most Dedicated school with their GRENCHI contact persons, Mrs.Ngozi Ogamba and Mr.Divinefavour Enwereuzo" />
                                         </div>
 
                                         <span className="bold">Sustainable Practices</span>

@@ -32,7 +32,7 @@ const NatureLabProject = () => {
 
                 <div className="gecci-main-projects">
                     <h4 className='heading text-green'>Nature Lab Projects</h4>
-                    <div className="projectContainer">
+                    <div className="Nature-lab-project-Container">
                         {natureLabProjectArray.map((natureLabProjectArray) => (
                             <div key={natureLabProjectArray.id} >
                                 <Link to={natureLabProjectArray.url}>

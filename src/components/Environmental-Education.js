@@ -33,6 +33,35 @@ const EnvironmentalEducation = () => {
                     <h4 className='heading text-green'>Our Environmental Education Activities</h4>
                     
                     <div className='project-container' >
+
+                        <div className="project-box project-box-reverse">
+                            <div className="project-video">
+                                <iframe width="935" height="526" src="https://www.youtube.com/embed/oIj8y4AXNzk" title="Student Educational Trip to Lekki Conservation Centre, Lagos, Nigeria - GRENCHI #adventure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <div className="project-info">
+                                <h5 className='project-info-heading' >Students Visit to Nature Area</h5>
+                                <p>As part of our hands-on environmental education program, students visited the Lekki Conservation Centre, an establishment of the Nigerian Conservation Foundation and renowned urban nature reserve in Lagos, Nigeria. The highlight of the trip was the exhilarating climb on the 401-meter-long, 22.5-meter-high canopy walkway - the longest in Africa. Nature-based learning like this builds curiosity, courage, and a deeper connection to the environment. It’s more than a trip for them, it’s a step toward raising the next generation of environmental stewards.<br />
+                                We operate by the principle "If nature study does not make a child love nature, then it should cease"- Anna Botsford Comstock
+                                </p>
+                                
+                            </div>
+
+                        </div>
+
+                        <div className="project-box">
+                            
+                            <div className="project-info">
+                                <h5 className='project-info-heading' >Climate Teachers Training</h5>
+                                <p>With this training, we empower teachers of our participating schools with the knowledge, tools, and confidence to integrate climate change education into classrooms. Through interactive sessions, practical resources, and hands-on activities, teachers become catalysts for environmental awareness and sustainability in their schools especially to environmental club members.
+                                </p>
+                                
+                            </div>
+
+                            <div className="project-img"><img src='img/Projects/CTT-1.jpg' alt='World Earth Day' /></div>
+                        </div>
+
+
                         <div className="project-box">
                             <div className="project-img"><img src='img/Projects/idf.jpg' alt='World Forestry Day' /></div>
                             <div className="project-info">

@@ -68,6 +68,23 @@ const TreePlantingProject = () => {
                                             <div className="swiper-pagination"></div>
                                         </div>
                                     </div>
+
+                                    {/* IGWEBUIKE */}
+                                    <div className="article-gallary">
+                                        <h3>IMAGES OF TREE PLANTING IN IGWEBUIKE GRAMMAR SCHOOL, AWKA</h3>
+                                        <div className="swiper">
+                                            <div className="slide-content">
+                                                <div className="image-list swiper-wrapper">
+                                                <img src="../img/Tree Planting/Schools/Tree-planting-igw-1.jpg" className="sliding-img swiper-slide" alt='Students of St. Joseph holding tree seedlings in polypots' />
+                                                <img src="../img/Tree Planting/Schools/Tree-planting-igw-2.jpg" className="sliding-img swiper-slide" alt='Pupils and teachers of St. Joseph transplanting the seedlngs into the ground' />
+                                                <img src="../img/Tree Planting/Schools/Tree-planting-igw-3.jpg" className="sliding-img swiper-slide" alt='Pupils and teachers of St. Joseph with the director of GECCI (formally Laura Green Foundation)transplanting the seedlngs into the ground' />
+                                                </div>
+                                            </div>
+                                            <div className="swiper-button-next swiper-btn"></div>
+                                            <div className="swiper-button-prev swiper-btn"></div>
+                                            <div className="swiper-pagination"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

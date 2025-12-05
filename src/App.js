@@ -12,11 +12,11 @@ import Team from './components/Team';
 import Projects from './components/Projects';
 import ClimateBootcamp2023 from './Projects/ClimateBootcamp-2023';
 import ClimateBootcamp2024 from './Projects/ClimateBootcamp-2024';
+import ClimateBootcamp2025 from './Projects/ClimateBootcamp-2025';
 import CommunityEngagement from './components/CommunityEngagement';
 import EbenebeAgriculturalEmpowermentProgramme from './Projects/Ebenebe-Agriculture-Empowerment-Programme';
 import EbenebeClimateResilienceWorkshop from './Projects/Ebenebe-Climate-Resilience-Workshop';
 import EbenebeCommunityEngagement from './Projects/Ebenebe-Community-Engagement';
-import EcoRestorationForClimateAction from './Projects/Eco-Restoration-for-Climate-Action';
 import GreenHangout2022 from './Projects/GreenHangout-2022';
 import Membership from './components/Membership';
 import Volunteer from './components/Volunteer';
@@ -37,6 +37,9 @@ import YouthPolicyTraining from './Events/Youth-Policy-Training';
 import EnvironmentalStemMiniGrantApplication from './Events/Environmental-STEM-mini-grant-application';
 import ClimateBootcamp2025Application from './Events/Climate-Bootcamp-3-0';
 import ImpactReport from './components/Impact-Report';
+import EcoSystemRestoration from './components/Ecosystem-Restoration';
+import ESTEMProjects from './components/E-STEM-Projects';
+import Career from './components/Career';
 
 function App() {
   return (
@@ -51,17 +54,20 @@ function App() {
         <Route path='/CommunityEngagement' Component={CommunityEngagement} />
         <Route path='/Climate-Bootcamp' Component={ClimateBootcamp} />
         <Route path='/Environmental-Education' Component={EnvironmentalEducation} />
+        <Route path='/Ecosystem-Restoration' Component={EcoSystemRestoration} />
         <Route path='/Nature-Lab-Project' Component={NatureLabProject} />
+        <Route path='/E-STEM-Projects' Component={ESTEMProjects} />
         <Route path='/Projects/ClimateBootcamp-2023' Component={ClimateBootcamp2023} />
         <Route path='/Projects/ClimateBootcamp-2024' Component={ClimateBootcamp2024} />
+        <Route path='/Projects/ClimateBootcamp-2025' Component={ClimateBootcamp2025} />
         <Route path='/blog' Component={Blogs} />
         <Route path='/Events' Component={Events} />
         <Route path='/Membership' Component={Membership} />
         <Route path='/Volunteer' Component={Volunteer} />
+        <Route path='/Career' Component={Career} />
         <Route path='/Projects/Ebenebe-Agriculture-Empowerment-Programme' Component={EbenebeAgriculturalEmpowermentProgramme}/>
         <Route path='/Projects/Ebenebe-Climate-Resilience-Workshop' Component={EbenebeClimateResilienceWorkshop} />
         <Route path='/Projects/Ebenebe-Community-Engagement' Component={EbenebeCommunityEngagement} />
-        <Route path='/Projects/Eco-Restoration-for-Climate-Action' Component={EcoRestorationForClimateAction} />
         <Route path='/Projects/GreenHangout' Component={GreenHangout2022} />
         <Route path='/Projects/WorldEarthDay-2024' Component={WorldEarthDay2024} />
         <Route path='/Projects/WorldEnvironmentDay-2024' Component={WorldEnvironmentDay2024} />

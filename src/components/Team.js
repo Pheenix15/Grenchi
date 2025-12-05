@@ -174,6 +174,8 @@ const Team = () => {
                     </div>
                 </div>
 
+                {/* ADVISORY BOARD SECTION */}
+
                 <div className="ad-container">
                     <h3 className='heading '>Advisory Board</h3>
                     <div className="team-members">
@@ -321,6 +323,15 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* FULL TEAM IMAGE */}
+                <div className="team-image-container">
+                    <h3 className='heading '>Team Members and Volunteers</h3>
+
+                    <div className="team-image">
+                        <img src="../img/team-volunteers.jpg" alt="" />
                     </div>
                 </div>
             </div>
