@@ -1,0 +1,22 @@
+.volunteer-section {
+  background-image: url(../../../img/landing-page/team.jpg);
+  background-color: #1E1E1E;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.volunteer-fixed-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10% 5%;
+  color: #f1f1f1;
+  font-size: 1.3rem;
+  text-align: center;
+}/*# sourceMappingURL=VolunteerSection.css.map */

@@ -1,0 +1,114 @@
+@use "../variables";
+
+.project-category-page {
+  position: relative;
+}
+
+.category-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  color: variables.$mainWhite;
+}
+
+.category-hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.category-hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: variables.$heroOverlay;
+}
+
+.category-hero-image img {
+  // Position of hero image
+  object-position: center;
+}
+
+.category-fixed-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: variables.$fixedWidth;
+  margin: 0 auto;
+  padding: variables.$horizontalPadding;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+// Youtube Modal
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.project-modal {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  background-image: variables.$mainBlack;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: variables.$transparentGreenBackground;
+  color: variables.$mainWhite;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.3s ease-in;
+}
+
+.project-modal-close::before {
+  background: transparent !important;
+}
+
+.project-modal-video {
+  aspect-ratio: 16 / 9;
+}
+
+.project-modal-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (hover: hover) {
+  .project-modal-close:hover {
+    background-color: variables.$mainGreen;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-row {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+  }
+}

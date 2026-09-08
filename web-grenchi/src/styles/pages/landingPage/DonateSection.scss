@@ -1,0 +1,63 @@
+@use "../../variables";
+
+.donate-section {
+    background-color: variables.$mainGreen;
+}
+
+.donate-fixed-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: variables.$fixedWidth;
+    padding: 20px;
+}
+
+.donate-icon {
+    width: 100px;
+}
+
+.donate-cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donate-cta-container .donate-inner-button {
+    display: none;
+}
+
+.donate-cta {
+    font-size: 1.3em;
+    text-align: center;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    color: variables.$mainWhite;
+}
+
+@media (max-width: 947px) {
+    .donate-fixed-width {
+        justify-content: unset;
+        gap: 5%;
+    }
+    .donate-cta-container .donate-inner-button {
+        display: flex;
+    }
+
+    .donate-outter-button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-fixed-width {
+        justify-content: center;
+    }
+
+    .donate-icon {
+        display: none;
+    }
+}

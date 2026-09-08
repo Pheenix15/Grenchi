@@ -1,0 +1,24 @@
+@use "../../variables";
+
+.volunteer-section {
+    background-image: url(../../../img/landing-page/team.jpg);
+    background-color: variables.$mainBlack;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.volunteer-fixed-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: variables.$fixedWidth;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% 5%;
+    color: variables.$mainWhite;
+    font-size: 1.3rem;
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo Black", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+p, span, a, div {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: relative;
+  background: #094b0e;
+  color: #f1f1f1;
+  padding: 11px 23px;
+  border: 2px solid #094b0e;
+  border-radius: 3px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 0;
+}
+
+button.white-button {
+  background: #f1f1f1;
+  color: #1E1E1E;
+}
+
+button.white-button:hover {
+  color: #f1f1f1;
+}
+
+button.alt-button {
+  background: transparent;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  transition: border 0.3s ease-in;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #094b0e, #03670B);
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  z-index: -1;
+}
+
+button.alt-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border-radius: 3px;
+  opacity: 0;
+  z-index: -1;
+}
+
+@media (hover: hover) {
+  button:hover::before {
+    opacity: 1;
+  }
+  button.alt-button:hover {
+    border: 2px solid #094b0e;
+  }
+}/*# sourceMappingURL=App.css.map */

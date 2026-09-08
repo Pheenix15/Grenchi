@@ -1,0 +1,104 @@
+@use "./styles/variables";
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: variables.$headingFont;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+p,span,a, div {
+  font-family: variables.$textFont;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// section {
+//   // padding-left: 30px;
+//   // padding-right: 30px;
+//   // margin-top: 50px;
+// }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: relative;
+  background: variables.$mainGreen;
+  color: variables.$mainWhite;
+  padding: 11px 23px;
+  border: 2px solid variables.$mainGreen;
+  border-radius: variables.$borderRadius;
+  font-family: variables.$textFont;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 0;
+}
+
+button.white-button {
+  background: variables.$mainWhite;
+  color: variables.$mainBlack;
+}
+
+button.white-button:hover {
+  color: variables.$mainWhite;
+}
+
+button.alt-button {
+  background: transparent;
+  border: 2px solid variables.$mainWhite;
+  color: variables.$mainWhite;
+  transition: border 0.3s ease-in;
+}
+
+// Gradient Layer for button hover effect
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, variables.$mainGreen, variables.$secondaryGreen);
+  border-radius: variables.$borderRadius;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  z-index: -1;
+}
+
+button.alt-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border-radius: variables.$borderRadius;
+  opacity: 0;
+  
+  z-index: -1;
+}
+@media (hover: hover) {
+  button:hover::before {
+    opacity: 1;
+  }
+
+  button.alt-button:hover {
+    border: 2px solid variables.$mainGreen;
+  }
+}

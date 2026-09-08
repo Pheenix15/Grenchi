@@ -1,0 +1,53 @@
+@use "../variables";
+
+.header {
+    background-color: variables.$mainGreen;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: variables.$mainWhite;
+    padding: 10px variables.$horizontalPadding;
+}
+
+
+.slogan .slogan2 {
+    display: none;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+// Sliding Animation
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 769px) {
+    .slogan {
+        display: flex;
+        flex-direction: row;
+        max-width: 60%;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+    .slogan .slogan2 {
+        display: block;
+    }
+
+    .RightToLeft{
+        margin-left: 10px;
+        padding-left: 10px;
+        animation: 15s slide linear infinite;
+    }
+}

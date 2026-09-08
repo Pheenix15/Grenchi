@@ -1,0 +1,160 @@
+@use '../variables';
+
+.navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.fixed-width {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: variables.$fixedWidth;
+    padding: 20px variables.$horizontalPadding;
+}
+
+.nav-logo {
+    width: 70px;
+}
+
+button.nav-menu-button {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: min(5vw, 40px);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: variables.$mainWhite;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$mainGreen;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.dropdown-secondary {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px
+}
+
+.nav-icon {
+    transition: transform 0.5s ease;
+}
+
+.nav-icon.rotate-nav-icon {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        background-color: variables.$mainWhite;
+    }
+
+    .nav-logo {
+        width: 50px;
+    }
+
+    button.nav-menu-button {
+        display: flex;
+        background: none;
+        border: none;
+        color: variables.$secondaryGreen;
+        font-size: 1.4em;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        box-sizing: border-box;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: calc(95vh - 100%);
+        padding: 10px 5%;
+        background-color: variables.$mainWhite;
+
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-links-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-link a {
+        font-size: 1rem;
+        font-weight: unset;
+        color: variables.$mainGreen;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: static;
+        background-color: transparent;
+    }
+
+}
+
+@media (max-width:456px) {
+    .mobile-menu {
+        align-items: stretch;
+    }
+}

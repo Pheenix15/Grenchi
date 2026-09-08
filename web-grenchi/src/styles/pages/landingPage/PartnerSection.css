@@ -1,0 +1,71 @@
+.partner-section {
+  overflow: hidden;
+}
+
+.partner-fixed-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.partner-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.partner-heading h3 {
+  color: #094b0e;
+}
+
+.partners-logo-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 25px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  animation: scroll-partners 20s linear infinite;
+}
+
+.partners-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-partners {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+/* hide scrollbar on Chrome and Safari */
+.partner-logo {
+  flex-shrink: 0; /* prevent logos from squishing, forces scroll instead */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}/*# sourceMappingURL=PartnerSection.css.map */

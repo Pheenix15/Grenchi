@@ -1,0 +1,86 @@
+@use "../../variables";
+
+.team-fixed-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: variables.$fixedWidth;
+    margin: 0 auto;
+    padding: 20px variables.$horizontalPadding;
+}
+
+.team-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.team-heading h2 {
+    color: variables.$mainGreen;
+}
+
+.grenchi-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.team-box {
+    position: relative;
+    background-image: url(../../../img/bkg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 300px !important;
+    border-radius: variables.$borderRadius;
+    overflow: hidden;
+}
+
+.team-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: variables.$mainWhite;
+    background: variables.$mainGreen;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.team-cta {
+    display: flex;
+    justify-content: space-between;
+    background-color: variables.$mainGreen;
+    color: variables.$mainWhite;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team-cta-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+// Swiper style
+.swiper-button-prev,.swiper-button-next {
+    color: variables.$secondaryGreen !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: variables.$gray !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: variables.$mainWhite !important;
+}

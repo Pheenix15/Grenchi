@@ -1,0 +1,40 @@
+.project-hero {
+  background-image: url(../../img/hero.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+}
+
+.projects-fixed-width {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.project-card-description {
+  font-size: 0.8rem;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@media (max-width: 769px) {
+  .projects-fixed-width {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 456px) {
+  .projects-fixed-width {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=projects.css.map */
